@@ -1,0 +1,7 @@
+{% load staticfiles %}
+<h1>successes!</h1>
+
+{% for i in image %}
+    <img src="{{ i.image.url }}" sizes="(max-width: 30em) 100vw, (max-width: 50em) 50vw, calc(33vw - 100px)")
+>
+{% endfor %}
